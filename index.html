@@ -10,17 +10,28 @@
         }
         body{
             background-color: lightblue;
+            text-align: center;
            
         }
         header{
             background-color: black;
             color: white;
             padding: 10px;
+            text-align: left;
             
         }
         div{
             margin: 10px;
             padding: 10px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            float: right;
+        }
+        .box{
+            display:flex;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -28,11 +39,14 @@
     <header>
         <h1>Saidul Islam</h1>
     </header>
-   <div>
-    <h1>Hello crossbirth</h1>
-    <h2>This is my first website.</h2>
-    <p>Click the button bellow</p>
-    <button onclick="show()">Click me</button>
+   <div class="box">
+    <div>
+     <h1>Hello crossbirth</h1>
+     <h2>This is my first website.</h2>
+     <p style="margin: 10px;">Click the button bellow</p>
+     <button onclick="show()">Click me</button>
+    </div>
+    <img src="https://images.freeimages.com/images/large-previews/48d/marguerite-1372118.jpg">
    </div>
     <script>
         function show() {
